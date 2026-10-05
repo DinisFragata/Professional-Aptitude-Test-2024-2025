@@ -1,9 +1,15 @@
-# Developed a **mobile app** and a **website** for my school with the following features:  
-- 🔐 **Authentication System** — login & user management  
-- 🍽️ **Lunch Ticket Registration**  
-- 🚪 **Entry & Exit Tracking**  
-- 📅 **Activity Management**  
-- 📝 **Grades Recording & Viewing**  
+# School management app (PAP 2024/2025)
+
+My final project at Escola Tecnológica e Profissional de Sertã: a mobile app and a website for the school. I built it over 7 months (part-time) and it got 20/20.
+
+What it does:
+- 🔐 Login and user management
+- 🍽️ Lunch ticket booking
+- 🚪 Entry and exit tracking
+- 📅 Activities
+- 📝 Grades (recording and viewing)
+
+What I learned: It was my first end-to-end project, and I decided to use PHP as a bridge for my React.js and React Native apps—which caused me a lot of trouble, as I had to adapt the PHP code for each version. If I were doing it today, I would have used an API and handled JSON on the FE.
 
 📌 **Duration:** 7 months (part-time)  
 🏆 **Grade:** Maximum score (20/20)  
