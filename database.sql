@@ -1,3 +1,6 @@
+-- Dados fictícios para demonstração (PAP 2024/2025).
+-- Todos os utilizadores têm a password: demo1234
+--
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
@@ -133,34 +136,6 @@ CREATE TABLE `codigosautenticacao` (
 -- Extraindo dados da tabela `codigosautenticacao`
 --
 
-INSERT INTO `codigosautenticacao` (`id`, `email`, `auth_code`, `created_at`) VALUES
-(53, 'dinisfragata.292204@etps.com.pt', 40899, '2025-03-12 12:53:17'),
-(67, 'admin.demo@etps.com.pt', 58784, '2025-03-26 20:11:50'),
-(98, 'telmo@etps.com.pt', 78995, '2025-03-20 19:44:22'),
-(106, 'miguelrui@etps.com.pt', 52800, '2025-03-29 16:10:17'),
-(111, 'Dinifragata@etps.com.pt', 26272, '2025-03-30 13:29:24'),
-(112, '1239@etps.com.pt', 90717, '2025-04-16 08:34:53'),
-(114, 'aluno.demo@etps.com.pt', 12811, '2025-04-08 08:31:33'),
-(116, 'dinisfragata@etps.com.pt', 47802, '2025-04-09 08:05:40'),
-(148, 'cao@etps.com.pt', 68260, '2025-04-09 19:14:29'),
-(149, 'aux@etps.com.pt', 77737, '2025-04-09 19:19:28'),
-(151, 'admeopai@etps.com.pt', 74107, '2025-04-09 19:39:19'),
-(155, 'rui1@etps.com.pt', 88573, '2025-04-17 13:17:18'),
-(156, 'rui2@etps.com.pt', 81238, '2025-04-17 13:23:07'),
-(157, 'rui3@etps.com.pt', 15783, '2025-04-17 13:36:50'),
-(158, 'rui4@etps.com.pt', 95893, '2025-04-17 13:47:44'),
-(159, 'rui5@etps.com.pt', 19734, '2025-04-17 13:51:08'),
-(160, 'rui6@etps.com.pt', 89281, '2025-04-17 13:54:33'),
-(161, 'rui7@etps.com.pt', 44267, '2025-04-17 13:57:49'),
-(162, 'rui8@etps.com.pt', 79385, '2025-04-17 14:05:07'),
-(163, 'rui9@etps.com.pt', 17958, '2025-04-17 14:07:45'),
-(164, 'rui10@etps.com.pt', 73827, '2025-04-17 14:13:36'),
-(165, 'rui11@etps.com.pt', 29619, '2025-04-17 14:28:04'),
-(204, 'df@etps.com.pt', 90118, '2025-04-20 11:12:57'),
-(220, 'kkk@etps.com.pt', 10373, '2025-04-20 18:58:47'),
-(243, 'apagaoprof@etps.com.pt', 95141, '2025-04-20 19:35:34'),
-(273, 'antonio@etps.com.pt', 56905, '2025-04-26 14:15:44'),
-(277, 'dinis@etps.com.pt', 74894, '2025-05-05 15:09:02');
 
 -- --------------------------------------------------------
 
@@ -183,18 +158,18 @@ CREATE TABLE `dadosdoutilizador` (
 --
 
 INSERT INTO `dadosdoutilizador` (`id`, `email`, `password`, `cargoUtilizador`, `estado`, `data_criacao`, `device_token`) VALUES
-(6, 'professor@etps.com.pt', '$2y$10$YyZYiiRcbQmEP8B9B8y7GeZH90DkKxj5uEur22gSVj.dSe.6qpUPi', 'professor', 'ativo', '2025-03-02 11:37:54', NULL),
-(37, 'admin.demo@etps.com.pt', '$2y$10$upJ0WcalvE0p1TRyBa6YpeYtMb54TsOhyGE4Ea98vT4u5MYZYRcYC', 'admin', 'ativo', '2025-03-02 11:37:54', NULL),
-(83, 'aluno@etps.com.pt', '$2y$10$/SObyX9S5ws.lrjYe3ZrW.FGt6/U9Ry9wiEJcV67Pzr8QJ1v.RLTe', 'aluno', 'ativo', '2025-03-29 20:47:10', 'ExponentPushToken[CE3G_DJEOWsWtF8ZXUCvgO]'),
-(85, 'maria@etps.com.pt', '$2y$10$BpJkPtaRnV9TwnwaqPq0huidA4srjGyMHq1dblsCLvc/YtlfGr01C', 'aluno', 'ativo', '2025-03-30 13:29:43', ''),
-(86, 'auxiliar@etps.com.pt', '$2y$10$ruAKbGYQrIONO2eLtJTt7ev3111RD7/UausaxyE3HxE2M1GKkZAzq', 'auxiliar', 'ativo', '2025-04-01 17:13:08', NULL),
-(87, 'manuel@etps.com.pt', '$2y$10$t.cOBhj4Qd5zvTkXaljgGe9E/ctMTymrVIE8JjfJn3wyKfvd9UXiC', 'professor', 'ativo', '2025-04-07 14:14:50', NULL),
-(93, 'administrador@etps.com.pt', '$2y$10$ifq10s2UInRO3LAcNvx.e.o4UYMS.R5uRz2bwtyNpn8QokhvdpqiC', 'admin', 'ativo', '2025-04-09 19:18:47', NULL),
-(108, 'joaquim@etps.com.pt', '$2y$10$wTCWd1iSzta5UQB8IK8HJu3IaFt1EW/XJPloePD78pRo5FY7vbFgi', 'aluno', 'pendente', '2025-04-17 14:14:24', NULL),
-(109, 'joao@etps.com.pt', '$2y$10$KqsFR9WUFzqQ5dWyDJHc9Ob9Q.mFim3IWNafuVupdfrwV.I06H47O', 'aluno', 'pendente', '2025-04-17 14:28:24', NULL),
-(137, 'antonio@etps.com.pt', '$2y$10$V/bCbtYOFbpS/pdX6gd3VOMCsr0KhS638i95UdyWI5bfPEKaPfdgy', 'aluno', 'ativo', '2025-04-26 14:16:15', NULL),
-(155, 'camponeses@etps.com.pt', '$2y$10$ZQ.sT9Q/8BbectGZMxFyj.w3DrSskDyitaDhd8daDOhm5HxzBa1n2', 'aluno', 'ativo', '2025-05-05 11:23:26', NULL),
-(157, 'dinisfragata.292204@etps.com.pt', '$2y$10$1scpGiy4Y0YaAgYw6hb7vuDigbotnJnSUJG1lDlbFWDTVFHldCuq.', 'aluno', 'ativo', '2025-05-05 14:33:12', NULL),
+(6, 'professor@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'professor', 'ativo', '2025-03-02 11:37:54', NULL),
+(37, 'admin.demo@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'admin', 'ativo', '2025-03-02 11:37:54', NULL),
+(83, 'aluno@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'aluno', 'ativo', '2025-03-29 20:47:10', 'ExponentPushToken[CE3G_DJEOWsWtF8ZXUCvgO]'),
+(85, 'maria@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'aluno', 'ativo', '2025-03-30 13:29:43', ''),
+(86, 'auxiliar@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'auxiliar', 'ativo', '2025-04-01 17:13:08', NULL),
+(87, 'manuel@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'professor', 'ativo', '2025-04-07 14:14:50', NULL),
+(93, 'administrador@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'admin', 'ativo', '2025-04-09 19:18:47', NULL),
+(108, 'joaquim@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'aluno', 'pendente', '2025-04-17 14:14:24', NULL),
+(109, 'joao@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'aluno', 'pendente', '2025-04-17 14:28:24', NULL),
+(137, 'antonio@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'aluno', 'ativo', '2025-04-26 14:16:15', NULL),
+(155, 'camponeses@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'aluno', 'ativo', '2025-05-05 11:23:26', NULL),
+(157, 'dinisfragata.292204@etps.com.pt', '$2y$10$/7mL9UIh8j/TCOpalYGdM.5HmvkSQvDLw6Gw6lWTbqFO1KqpZI4/G', 'aluno', 'ativo', '2025-05-05 14:33:12', NULL),
 (158, 'dinis@etps.com.pt', '', 'aluno', 'pendente', '2025-05-05 14:38:55', NULL);
 
 -- --------------------------------------------------------
@@ -406,11 +381,11 @@ CREATE TABLE `personalizacao_utilizador` (
 --
 
 INSERT INTO `personalizacao_utilizador` (`id`, `user_id`, `background_user`, `tema_user`) VALUES
-(2, 83, 'uploads/backgrounds/background_83_1748797002.jpg', 'dark'),
-(3, 6, 'uploads/backgrounds/background_6_1744900736.jpg', 'light'),
-(4, 93, 'uploads/backgrounds/background_93_1744444919.jpg', 'light'),
+(2, 83, 'assets/images/bg2.jpg', 'dark'),
+(3, 6, 'assets/images/bg3.jpg', 'light'),
+(4, 93, 'assets/images/bg4.jpg', 'light'),
 (5, 37, 'assets/images/bg1.jpg', 'dark'),
-(6, 155, 'uploads/backgrounds/background_155_1746445808.jpg', 'light');
+(6, 155, 'assets/images/bg5.jpg', 'light');
 
 -- --------------------------------------------------------
 
@@ -552,35 +527,6 @@ CREATE TABLE `sessoes_do_utilizador` (
 -- Extraindo dados da tabela `sessoes_do_utilizador`
 --
 
-INSERT INTO `sessoes_do_utilizador` (`id`, `user_id`, `token`, `device_type`, `created_at`, `expires_at`) VALUES
-(18, 6, 'token-removido', 'android', '2025-03-29 21:19:47', '2025-05-18 22:19:47'),
-(19, 83, 'token-removido', 'android', '2025-03-29 21:20:20', '2025-05-18 22:20:20'),
-(30, 37, 'token-removido', 'web', '2025-04-01 17:13:02', '2025-05-21 18:13:02'),
-(31, 86, 'token-removido', 'web', '2025-04-01 17:13:55', '2025-05-21 18:13:54'),
-(34, 83, 'token-removido', 'android', '2025-04-01 17:39:39', '2025-05-21 18:39:39'),
-(38, 83, 'token-removido', 'web', '2025-04-07 15:30:10', '2025-05-27 16:30:10'),
-(48, 6, 'token-removido', 'web', '2025-04-08 09:44:07', '2025-05-28 10:44:07'),
-(56, 37, 'token-removido', 'web', '2025-04-09 19:18:15', '2025-05-29 20:18:15'),
-(57, 37, 'token-removido', 'web', '2025-04-09 19:18:37', '2025-05-29 20:18:37'),
-(77, 83, 'token-removido', 'android', '2025-04-11 09:54:32', '2025-05-31 10:54:32'),
-(78, 83, 'token-removido', 'android', '2025-04-11 14:08:29', '2025-05-31 15:08:29'),
-(79, 83, 'token-removido', 'android', '2025-04-11 14:10:41', '2025-05-31 15:10:41'),
-(80, 83, 'token-removido', 'android', '2025-04-11 18:11:31', '2025-05-31 19:11:31'),
-(84, 37, 'token-removido', 'web', '2025-04-12 08:52:02', '2025-06-01 09:52:02'),
-(108, 86, 'token-removido', 'web', '2025-04-16 08:38:44', '2025-06-05 09:38:44'),
-(110, 6, 'token-removido', 'web', '2025-04-16 09:09:22', '2025-06-05 10:09:22'),
-(111, 86, 'token-removido', 'android', '2025-04-16 10:20:56', '2025-06-05 11:20:56'),
-(114, 86, 'token-removido', 'android', '2025-04-16 15:52:34', '2025-06-05 16:52:34'),
-(115, 6, 'token-removido', 'android', '2025-04-16 15:58:50', '2025-06-05 16:58:50'),
-(121, 93, 'token-removido', 'android', '2025-04-17 15:12:15', '2025-06-06 16:12:15'),
-(124, 6, 'token-removido', 'web', '2025-04-17 15:42:02', '2025-06-06 16:42:02'),
-(128, 6, 'token-removido', 'web', '2025-04-19 10:21:37', '2025-06-08 11:21:37'),
-(130, 6, 'token-removido', 'android', '2025-04-19 11:18:59', '2025-06-08 12:18:59'),
-(137, 37, 'token-removido', 'android', '2025-04-22 14:16:09', '2025-06-11 15:16:09'),
-(155, 83, 'token-removido', 'web', '2025-04-29 08:20:03', '2025-06-18 09:20:03'),
-(164, 6, 'token-removido', 'web', '2025-04-29 20:44:34', '2025-06-18 21:44:34'),
-(212, 6, 'token-removido', 'android', '2025-05-07 20:45:23', '2025-06-26 21:45:23'),
-(221, 83, 'token-removido', 'web', '2025-05-30 08:23:53', '2025-07-19 10:23:53');
 
 -- --------------------------------------------------------
 

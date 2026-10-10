@@ -17,3 +17,12 @@ data.env
 
 # Logs
 *.log
+
+# Ficheiros carregados pelos utilizadores (ficam só as pastas e os fundos padrão)
+PHP/uploads/*
+!PHP/uploads/backgroundsPadrao/
+!PHP/uploads/backgrounds/
+PHP/uploads/backgrounds/*
+!PHP/uploads/backgrounds/.gitkeep
+PHP/calendarioFiles/uploads/*/*
+!PHP/calendarioFiles/uploads/*/.gitkeep
